@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajio - Sign In</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    .box {
+        display: inline-block;
+        border: 1px solid;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .facebook {
+        border-color: blue;
+    }
+
+    .google {
+        border-color: red;
+        
+    }
+
+    .logo {
+        width: 150px; /* Adjust the width as needed */
+        height: 50px; /* Adjust the height as needed */
+        margin-bottom: 10px;
+    }
+</style>
+<style>
+    /* Blinking cursor animation */
+    @keyframes cursor {
+        from { border-right-color: black; }
+        to { border-right-color: transparent; }
+    }
+
+    /* Style for the input field */
+    input {
+        border: none;
+        border-bottom: 1px solid black;
+        font-size: 16px;
+        padding: 5px;
+        animation: cursor 1s infinite step-end;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Welcome To Ajio</h1>
+        <h2>Join/Sign in Using:</h2>
+        <div class="box facebook">
+            <img src="facebook-logo.png" alt="Facebook Logo" class="logo">
+            <h3>Facebook</h3>
+            <!-- Add Facebook content here -->
+        </div>
+        <div class="box google">
+            <img src="google-logo.png" alt="Google Logo" class="logo">
+            <h3>Google</h3>
+        </div>
+        <h2>------Or------</h2>
+        <label for="mobile">Mobile Number:</label><br>
+       <br> <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+        <h2>By signing in, I agree to <a href="index.html">Terms of Service</a></h2>
+</html>
